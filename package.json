@@ -28,5 +28,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.18"
+  },
+  "git": {
+    "url": "https://github.com/hurricanemark/jwt_auth_user_mngt.git"
   }
 }
