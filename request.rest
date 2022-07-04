@@ -1,0 +1,51 @@
+// Note: Weird syntax, you must have break lines in between requests and contents.  
+// Watch and follow the convention of line break!
+
+###
+
+GET http://localhost:5555/
+
+
+###
+
+GET http://localhost:5555/users
+
+###
+
+GET http://localhost:3000/users/1
+
+###
+
+POST http://localhost:7777/users
+Content-Type: application/json
+
+{
+  "name": "Marco",
+  "email": "marco@abc.com",
+  "password": "abcdef"
+}
+
+###
+
+POST http://localhost:7777/users/login
+Content-Type: application/json
+
+{
+  "email": "marco@abc.com",
+  "password": "abcdef"
+}
+
+
+###
+
+GET http://localhost:5555/users/posts
+Authorization: Bearer <yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1hcmNvIiwiZW1haWwiOiJtYXJjb0BhYmMuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkNFhCMVcuSjNrUUhEdGRpRThQNm5mdXpqTHQ0b1ZiWHlpWDdPSjBnTTU3eWsxbkZiOWthVXEiLCJpYXQiOjE2NTY4ODYzMTYsImV4cCI6MTY1Njg4NjM0MX0.PdX6ywc-TiAatqj_wu1-KEyZbJOK-eH8ScSkNAXjKvI>
+
+
+###
+
+GET http://localhost:5555/users/posts
+Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1hcmNvIiwiZW1haWwiOiJtYXJjb0BhYmMuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkNFhCMVcuSjNrUUhEdGRpRThQNm5mdXpqTHQ0b1ZiWHlpWDdPSjBnTTU3eWsxbkZiOWthVXEiLCJpYXQiOjE2NTY4ODU3MDF9.2eH9Ji8SeoSIQCpxb75RdKRxf2bLMnNeqUfuEwKqc-c>
+
+
+
